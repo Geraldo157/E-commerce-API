@@ -13,7 +13,7 @@ public class ProdutoServiceFindAll {
     @Autowired
     private ProdutoRepository produtoRepository;
 
-    public List<Produto> list(){
+    public List<Produto> findAll(){
         List<Produto> produtos = new ArrayList<>();
         produtoRepository.findAll().forEach(produtos::add);
         return produtos;

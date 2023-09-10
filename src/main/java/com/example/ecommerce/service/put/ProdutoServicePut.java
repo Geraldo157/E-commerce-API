@@ -4,9 +4,11 @@ import com.example.ecommerce.dto.produto.ProdutoPutDTO;
 import com.example.ecommerce.model.Produto;
 import com.example.ecommerce.repository.ProdutoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.Optional;
 
+@Service
 public class ProdutoServicePut {
     @Autowired
     private ProdutoRepository produtoRepository;
